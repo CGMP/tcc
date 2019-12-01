@@ -1,0 +1,30 @@
+Análises de Artigos:
+
+- https://www.datacamp.com/community/tutorials/understanding-logistic-regression-python
+	Explica como funciona uma Regressão Logística, Função Sigmóide e Exemplo
+
+- https://towardsdatascience.com/sentiment-analysis-with-python-part-1-5ce197074184
+	Explica o básico para realizar uma Análise de Sentimento como limpar o texto inicialmente para análise, como vetorizar, criar um classificador com Regressão Logística Binária e Exemplo
+	
+- https://towardsdatascience.com/sentiment-analysis-with-python-part-2-4f71e7bde59a
+	Explicar técnicas para melhorar o texto antes da Análise de Sentimento, como Remoção de Palavras de Parada, Normalização, levar em consideração que 2 ou mais palavras juntas podem ter sentidos diferentes das 2 originais
+	
+- https://stackabuse.com/python-for-nlp-sentiment-analysis-with-scikit-learn/
+
+- https://levelup.gitconnected.com/sentiment-analysis-using-machine-learning-python-9122e03f8f7b
+
+- https://www.kaggle.com/ngyptr/lstm-sentiment-analysis-keras
+
+- https://stackabuse.com/python-for-nlp-movie-sentiment-analysis-using-deep-learning-in-keras/
+
+- https://dzone.com/articles/introducing-custom-classifier-build-your-own-text
+
+- https://blog.paralleldots.com/data-science/breakthrough-research-papers-and-models-for-sentiment-analysis/
+
+- https://paralleldots.xyz/Zero-Shot-Learning-for-Text-Classification
+
+- https://nlp.stanford.edu/pubs/glove.pdf
+	Some Glove explanation
+
+- https://medium.com/@viniljf/utilizando-processamento-de-linguagem-natural-para-criar-um-sumariza%C3%A7%C3%A3o-autom%C3%A1tica-de-textos-775cb428c84e
+
