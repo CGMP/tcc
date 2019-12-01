@@ -1,0 +1,112 @@
+<SellLabel@Label>
+    color: 205, 33, 3, 1
+
+<BuyLabel@Label>
+    color: 45, 114, 38, 1
+
+StokeDB:
+
+<StokeDB>:
+    orientation: "vertical"
+    analysis_day: analysis_date
+    last1: btn1
+    last2: btn2
+    last3: btn3
+    last4: btn4
+    last5: btn5
+    slider: slider_id
+    padding: 10
+    spacing: 10
+
+    BoxLayout:
+        size_hint_y: None
+        height: "40dp"
+        Label:
+            text: "Select Stoke:"
+        Spinner:
+            text: "..."
+            values: ["...", "PETR3", "PETR4"]
+            id: spinner_id
+            on_text: root.spinner_clicked(spinner_id.text)
+        Label:
+            text: "Select Date:"
+        TextInput:
+            text: "yyyy-mm-dd"
+            id: analysis_date
+
+    BoxLayout:
+        size_hint_y: None
+        height: "40dp"
+        Button:
+            text: "Analyse"
+            size_hint_x: 15
+            on_press: root.submit_analysis(analysis_date.text)
+        Button:
+            text: "Reset"
+            size_hint_x: 15
+            on_press: root.reset_analysis()
+
+    BoxLayout:
+        size_hint_y: None
+        height: "100dp"
+        SellLabel:
+            text: "Sell"
+        Slider:
+            id: slider_id
+            min: -1
+            max: 1
+            value: app.final_decision
+            step: .1
+        BuyLabel:
+            text: "Buy"
+
+    BoxLayout:
+        size_hint_y: None
+        height: "40dp"
+        Label:
+            text:"Last News"
+
+    BoxLayout:
+        Button:
+            size_hint_y: None
+            height: "10dp"
+            font_size: "8sp"
+            text: app.link1
+            id: btn1
+            on_press: root.redirect_to_news(app.link1)
+
+    BoxLayout:
+        Button:
+            size_hint_y: None
+            font_size: "8sp"
+            height: "10dp"
+            text: app.link2
+            id: btn2
+            on_press: root.redirect_to_news(app.link2)
+
+    BoxLayout:
+        Button:
+            size_hint_y: None
+            height: "10dp"
+            font_size: "8sp"
+            text: app.link3
+            id: btn3
+            on_press: root.redirect_to_news(app.link3)
+
+    BoxLayout:
+        Button:
+            size_hint_y: None
+            height: "10dp"
+            font_size: "8sp"
+            text: app.link4
+            id: btn4
+            on_press: root.redirect_to_news(app.link4)
+
+    BoxLayout:
+        Button:
+            size_hint_y: None
+            height: "10dp"
+            font_size: "8sp"
+            text: app.link5
+            id: btn5
+            on_press: root.redirect_to_news(app.link5)
